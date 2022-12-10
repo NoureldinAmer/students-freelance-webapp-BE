@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 // parse cookies.
 app.use(cookies());
 // enable cross origin request.
-app.use(cors({ origin: AccessControlAllowOrigin }));
+app.use(cors({ origin: [AccessControlAllowOrigin, 'http://164.92.114.225/'] }));
 // tiny logging.
 app.use(morgan("tiny"));
 
